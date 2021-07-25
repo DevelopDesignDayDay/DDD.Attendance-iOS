@@ -13,7 +13,6 @@ enum SignUpStep: Int {
     case StepOne = 1
     case StepTwo
     case StepThree
-    case StepFour
     case Complete
 }
 
@@ -22,6 +21,7 @@ enum Position: Int, Codable {
     case designer
     case and
     case ios
+    case webFront
     case backend
     
     var name: String {
@@ -32,6 +32,8 @@ enum Position: Int, Codable {
             return "AOS"
         case .ios:
             return "iOS"
+        case .webFront:
+            return "WebFront"
         case .backend:
             return "BackEnd"
         default:
@@ -49,6 +51,8 @@ enum Position: Int, Codable {
             return UIImage(named: "imgAttendanceCheckIos")
         case .backend:
             return UIImage(named: "imgAttendanceCheckServer")
+        case .webFront:
+            return UIImage(named: "imgAttendanceCheckWebFront")
         default:
             return UIImage()
         }
@@ -66,7 +70,7 @@ class SignUpViewModel {
     
     // Outputs
     lazy private(set) var progressBarSignal: Signal<Float, Never> = { [unowned self] in
-        return self.step.signal.map { Float($0.rawValue) * 0.25 }
+        return self.step.signal.map { Float($0.rawValue) * 0.5 }
     }()
     
     lazy private(set) var currentStepSignal: Signal<String, Never> = { [unowned self] in
@@ -77,16 +81,6 @@ class SignUpViewModel {
         let notEmptySignals = [
             self.firstName.producer.skipNil().map { $0 != "" },
             self.lastName.producer.skipNil().map { $0 != "" },
-        ]
-        return SignalProducer
-            .combineLatest(notEmptySignals)
-            .map { $0.reduce(true) { $0 && $1 } }
-    }()
-    
-    lazy private(set) var stepTwoBtnEnabledSignal: SignalProducer<Bool, Never> = { [unowned self] in
-        let notEmptySignals = [
-            self.email.producer.skipNil().map(self.validateEmail),
-            self.password.producer.skipNil().map(self.validatePassword),
         ]
         return SignalProducer
             .combineLatest(notEmptySignals)
@@ -129,7 +123,7 @@ private extension SignUpViewModel {
     func signUpFirebase(with user: UserModel, _ password: String) {
         firebase.signUp(with: user, password) { [weak self] result in
             if result?.user != nil {
-                self?.step.value = .StepFour
+                self?.step.value = .StepThree
             } else {
                 self?.alertObserver.send(value: "서버 오류입니다. 잠시 후에 다시 시도해주세요.")
             }

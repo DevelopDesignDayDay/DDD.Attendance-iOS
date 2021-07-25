@@ -9,9 +9,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepThreeView" customModule="DDD_Attendance" customModuleProvider="target">
             <connections>
                 <outlet property="andPositionCardView" destination="Yay-1t-uRF" id="jba-V5-KIt"/>
-                <outlet property="backendPositionCardView" destination="Ptv-Co-7xA" id="egM-zy-P7H"/>
+                <outlet property="backendPositionCardView" destination="QDG-Q3-Nt8" id="G6P-4r-IFT"/>
                 <outlet property="designerPositionCardView" destination="9fg-9B-rNe" id="fZT-3y-Ru9"/>
                 <outlet property="iosPositionCardView" destination="ldW-Op-ClN" id="PHF-Zf-uZE"/>
+                <outlet property="webFrontPositionCardView" destination="Ptv-Co-7xA" id="0NP-Z3-Dnm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -76,23 +77,22 @@
                     <rect key="frame" x="182.5" y="321" width="139.5" height="165"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Backend Dev"/>
-                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="signup_position_backend"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Web Front Dev"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="signup_position_webfront"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="positionIndex">
                             <integer key="value" value="3"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-Q3-Nt8" customClass="PositionCardView" customModule="DDD_Attendance" customModuleProvider="target">
-                    <rect key="frame" x="28" y="497" width="139.5" height="165"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-Q3-Nt8" customClass="PositionCardView" customModule="DDD_Attendance" customModuleProvider="target">
+                    <rect key="frame" x="28" y="501" width="139.5" height="165"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Web Dev"/>
-                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="logoWeb"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="image" value="signup_position_backend"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="positionIndex">
-                            <integer key="value" value="2"/>
+                            <integer key="value" value="4"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="Backend Dev"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
@@ -104,6 +104,7 @@
                 <constraint firstItem="ldW-Op-ClN" firstAttribute="leading" secondItem="9fg-9B-rNe" secondAttribute="leading" id="97q-a2-lRR"/>
                 <constraint firstItem="Ptv-Co-7xA" firstAttribute="height" secondItem="9fg-9B-rNe" secondAttribute="height" id="9Cw-7H-q2f"/>
                 <constraint firstItem="9fg-9B-rNe" firstAttribute="top" secondItem="bH0-jG-cu5" secondAttribute="bottom" constant="47" id="D5W-7D-2Zo"/>
+                <constraint firstItem="QDG-Q3-Nt8" firstAttribute="width" secondItem="ldW-Op-ClN" secondAttribute="width" id="Ddf-F2-OU7"/>
                 <constraint firstItem="ldW-Op-ClN" firstAttribute="width" secondItem="9fg-9B-rNe" secondAttribute="width" id="HK0-zC-TRU"/>
                 <constraint firstItem="ldW-Op-ClN" firstAttribute="top" secondItem="9fg-9B-rNe" secondAttribute="bottom" constant="15" id="JpQ-Yi-O9D"/>
                 <constraint firstItem="Ptv-Co-7xA" firstAttribute="top" secondItem="ldW-Op-ClN" secondAttribute="top" id="N1z-yF-i3A"/>
@@ -111,10 +112,13 @@
                 <constraint firstItem="Ptv-Co-7xA" firstAttribute="leading" secondItem="Yay-1t-uRF" secondAttribute="leading" id="UFU-Ua-VqR"/>
                 <constraint firstItem="Ptv-Co-7xA" firstAttribute="bottom" secondItem="ldW-Op-ClN" secondAttribute="bottom" id="UHi-Zs-LbT"/>
                 <constraint firstItem="Yay-1t-uRF" firstAttribute="width" secondItem="9fg-9B-rNe" secondAttribute="width" id="Vch-Ks-afJ"/>
+                <constraint firstItem="QDG-Q3-Nt8" firstAttribute="leading" secondItem="Wh0-gY-8o0" secondAttribute="leading" constant="28" id="cxM-lQ-t6L"/>
+                <constraint firstItem="QDG-Q3-Nt8" firstAttribute="height" secondItem="ldW-Op-ClN" secondAttribute="height" id="f3I-O1-vcf"/>
                 <constraint firstItem="ldW-Op-ClN" firstAttribute="height" secondItem="9fg-9B-rNe" secondAttribute="height" id="ft7-Uc-52F"/>
                 <constraint firstItem="Yay-1t-uRF" firstAttribute="leading" secondItem="9fg-9B-rNe" secondAttribute="trailing" constant="15" id="lR4-hC-83I"/>
                 <constraint firstItem="bH0-jG-cu5" firstAttribute="centerX" secondItem="Wh0-gY-8o0" secondAttribute="centerX" id="lgV-jD-Ao2"/>
                 <constraint firstItem="Yay-1t-uRF" firstAttribute="top" secondItem="9fg-9B-rNe" secondAttribute="top" id="pZM-hA-wt8"/>
+                <constraint firstItem="QDG-Q3-Nt8" firstAttribute="top" secondItem="ldW-Op-ClN" secondAttribute="bottom" constant="15" id="tMA-sp-iuY"/>
                 <constraint firstItem="Ptv-Co-7xA" firstAttribute="width" secondItem="9fg-9B-rNe" secondAttribute="width" id="wTi-jF-U3w"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
@@ -124,10 +128,10 @@
         </view>
     </objects>
     <resources>
-        <image name="logoWeb" width="50" height="50"/>
         <image name="signup_position_and" width="50" height="50"/>
         <image name="signup_position_backend" width="50" height="50"/>
         <image name="signup_position_design" width="50" height="50"/>
         <image name="signup_position_ios" width="50" height="50"/>
+        <image name="signup_position_webfront" width="50" height="50"/>
     </resources>
 </document>

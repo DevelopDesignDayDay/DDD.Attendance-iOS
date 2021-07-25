@@ -114,6 +114,9 @@ class PositionCardView: UIControl {
         case .backend:
             textLabel.text = "Backend Dev"
             imageView.image = UIImage(named: "signup_position_backend")
+        case .webFront:
+            textLabel.text = "Web Front Dev"
+            imageView.image = UIImage(named: "signup_position_webfront")
         default:
             break
         }

@@ -64,8 +64,6 @@ class StepTwoView: BaseView {
     override func bindViewModel() {
         viewModel.email <~ emailTextField.reactive.continuousTextValues
         viewModel.password <~ passwordTextField.reactive.continuousTextValues
-        
-        nextButton.reactive.isEnabled <~ viewModel.stepTwoBtnEnabledSignal
         errorTextLabel.reactive.textColor <~ viewModel.validationResultSignal
         reactive.pressNextButton <~ nextButton.reactive
             .controlEvents(.touchUpInside)

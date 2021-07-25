@@ -81,12 +81,10 @@ private extension SignUpViewController {
         case .StepOne:
             stepView = StepOneView(with: viewModel, delegate: self)
         case .StepTwo:
-            stepView = StepTwoView(with: viewModel, delegate: self)
-        case .StepThree:
             stepView = StepThreeView(with: viewModel)
-        case .StepFour:
-            NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
-            stepView = StepFourView(with: viewModel)
+        case .StepThree:
+          NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
+          stepView = StepFourView(with: viewModel)
         case .Complete:
             dismiss(animated: true, completion: nil)
         }
