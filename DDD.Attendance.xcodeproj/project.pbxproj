@@ -10,6 +10,9 @@
 		042BEAA3269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA2269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift */; };
 		042BEAA6269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */; };
 		042BEAEE26AD81170091CCF9 /* DDDColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAED26AD81170091CCF9 /* DDDColors.swift */; };
+		042BEB1826AD88ED0091CCF9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1726AD88ED0091CCF9 /* RxRelay */; };
+		042BEB1A26AD88ED0091CCF9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1926AD88ED0091CCF9 /* RxSwift */; };
+		042BEB1C26AD88ED0091CCF9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1B26AD88ED0091CCF9 /* RxCocoa */; };
 		046DB2DA269C9BAF00AC4538 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */; };
 		046DB2DF269C9BEC00AC4538 /* MyPageInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */; };
 		046DB2FB269C9CC900AC4538 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 046DB2FA269C9CC900AC4538 /* Then */; };
@@ -221,15 +224,18 @@
 			files = (
 				E9DEB98825E5E3AE00EDC182 /* Alamofire in Frameworks */,
 				E9DEBA0A25E6643F00EDC182 /* Lottie in Frameworks */,
+				042BEB1826AD88ED0091CCF9 /* RxRelay in Frameworks */,
 				BC10147A232E25E80096E962 /* libsqlite3.tbd in Frameworks */,
 				E9DEB98425E5E29200EDC182 /* ReactiveCocoa in Frameworks */,
 				E9DEB98C25E5E7E000EDC182 /* SnapKit in Frameworks */,
+				042BEB1C26AD88ED0091CCF9 /* RxCocoa in Frameworks */,
 				046DB2FB269C9CC900AC4538 /* Then in Frameworks */,
 				E9DEBA1225E664AA00EDC182 /* TextFieldEffects in Frameworks */,
 				BC101478232E25DF0096E962 /* libc++.tbd in Frameworks */,
 				E9DEBA0E25E6647900EDC182 /* CodableFirebase in Frameworks */,
 				E9DEBA2D25E6714E00EDC182 /* NVActivityIndicatorView in Frameworks */,
 				E9DEBA2F25E6714E00EDC182 /* NVActivityIndicatorViewExtended in Frameworks */,
+				042BEB1A26AD88ED0091CCF9 /* RxSwift in Frameworks */,
 				4626117224ACCBC0006D8EC8 /* PushKit.framework in Frameworks */,
 				F0B07994B95F822BDC801493 /* Pods_DDD_Attendance.framework in Frameworks */,
 			);
@@ -620,6 +626,9 @@
 				E9DEBA2C25E6714E00EDC182 /* NVActivityIndicatorView */,
 				E9DEBA2E25E6714E00EDC182 /* NVActivityIndicatorViewExtended */,
 				046DB2FA269C9CC900AC4538 /* Then */,
+				042BEB1726AD88ED0091CCF9 /* RxRelay */,
+				042BEB1926AD88ED0091CCF9 /* RxSwift */,
+				042BEB1B26AD88ED0091CCF9 /* RxCocoa */,
 			);
 			productName = DDD.Attendance;
 			productReference = BCE1B3B7231BB68D001BB684 /* DDD.Attendance.app */;
@@ -663,6 +672,7 @@
 				E9DEBA1025E664AA00EDC182 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				E9DEBA2B25E6714D00EDC182 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */,
+				042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = BCE1B3B8231BB68D001BB684 /* Products */;
 			projectDirPath = "";
@@ -1060,6 +1070,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
 		046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then.git";
@@ -1127,6 +1145,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		042BEB1726AD88ED0091CCF9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		042BEB1926AD88ED0091CCF9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		042BEB1B26AD88ED0091CCF9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
 		046DB2FA269C9CC900AC4538 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */;
