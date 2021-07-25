@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042BEAA3269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA2269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift */; };
+		042BEAA6269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */; };
+		042BEAEE26AD81170091CCF9 /* DDDColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAED26AD81170091CCF9 /* DDDColors.swift */; };
+		046DB2DA269C9BAF00AC4538 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */; };
+		046DB2DF269C9BEC00AC4538 /* MyPageInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */; };
+		046DB2FB269C9CC900AC4538 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 046DB2FA269C9CC900AC4538 /* Then */; };
 		204FC78F236084D100AE693A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204FC78E236084D100AE693A /* UserModel.swift */; };
 		2057031F232E2B0200103A3E /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057031E232E2B0200103A3E /* SignUpButton.swift */; };
 		20570323232E439900103A3E /* PositionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20570322232E439900103A3E /* PositionCardView.swift */; };
@@ -107,6 +113,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042BEAA2269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLinkTitleHeader.swift; sourceTree = "<group>"; };
+		042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLinkInfoCell.swift; sourceTree = "<group>"; };
+		042BEAED26AD81170091CCF9 /* DDDColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDColors.swift; sourceTree = "<group>"; };
+		046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInfoHeader.swift; sourceTree = "<group>"; };
 		168DF1228F6E1BC993EB16A5 /* Pods-DDD.Attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDD.Attendance.release.xcconfig"; path = "Target Support Files/Pods-DDD.Attendance/Pods-DDD.Attendance.release.xcconfig"; sourceTree = "<group>"; };
 		204FC78E236084D100AE693A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2057031E232E2B0200103A3E /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
@@ -213,6 +224,7 @@
 				BC10147A232E25E80096E962 /* libsqlite3.tbd in Frameworks */,
 				E9DEB98425E5E29200EDC182 /* ReactiveCocoa in Frameworks */,
 				E9DEB98C25E5E7E000EDC182 /* SnapKit in Frameworks */,
+				046DB2FB269C9CC900AC4538 /* Then in Frameworks */,
 				E9DEBA1225E664AA00EDC182 /* TextFieldEffects in Frameworks */,
 				BC101478232E25DF0096E962 /* libc++.tbd in Frameworks */,
 				E9DEBA0E25E6647900EDC182 /* CodableFirebase in Frameworks */,
@@ -226,6 +238,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042BEAEC26AD81010091CCF9 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				042BEAED26AD81170091CCF9 /* DDDColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		046DB2D7269C9B8B00AC4538 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				046DB2DC269C9BB700AC4538 /* Cell */,
+				046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		046DB2DC269C9BB700AC4538 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */,
+				042BEAA2269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift */,
+				042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		204FC78D236084BB00AE693A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +438,7 @@
 		BCE1B3B9231BB68D001BB684 /* DDD.Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				046DB2D7269C9B8B00AC4538 /* MyPage */,
 				4678E3A124B9B546005DCD5A /* Onboarding1.json */,
 				4678E3A224B9B546005DCD5A /* Onboarding2.json */,
 				BC0C4F4F23746EEF00DA85B0 /* DDD.Attendance.entitlements */,
@@ -469,6 +509,7 @@
 		BCE1B3F8231BE6D5001BB684 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				042BEAEC26AD81010091CCF9 /* Colors */,
 				E571F7682324032800816C04 /* Animator */,
 				BCE1B3F9231BE6DA001BB684 /* QRCode */,
 				E571F766232402D200816C04 /* ReuseableView.swift */,
@@ -578,6 +619,7 @@
 				E9DEBA1125E664AA00EDC182 /* TextFieldEffects */,
 				E9DEBA2C25E6714E00EDC182 /* NVActivityIndicatorView */,
 				E9DEBA2E25E6714E00EDC182 /* NVActivityIndicatorViewExtended */,
+				046DB2FA269C9CC900AC4538 /* Then */,
 			);
 			productName = DDD.Attendance;
 			productReference = BCE1B3B7231BB68D001BB684 /* DDD.Attendance.app */;
@@ -620,6 +662,7 @@
 				E9DEBA0C25E6647900EDC182 /* XCRemoteSwiftPackageReference "CodableFirebase" */,
 				E9DEBA1025E664AA00EDC182 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				E9DEBA2B25E6714D00EDC182 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = BCE1B3B8231BB68D001BB684 /* Products */;
 			projectDirPath = "";
@@ -732,6 +775,7 @@
 				BCE1B3ED231BE383001BB684 /* BaseDataSource.swift in Sources */,
 				BC3E50B5232A5F0100B56EBF /* SignUpViewController.swift in Sources */,
 				BCE1B3F3231BE57F001BB684 /* HomeViewModel.swift in Sources */,
+				046DB2DF269C9BEC00AC4538 /* MyPageInfoHeader.swift in Sources */,
 				BC10148D232E32810096E962 /* LoginTransitionCoordinator.swift in Sources */,
 				4654355224C1FA0300541E14 /* AttendanceStatusHeader.swift in Sources */,
 				46481EA3249DF80100F3DB02 /* SetAttendanceViewController.swift in Sources */,
@@ -741,6 +785,7 @@
 				4648F77724BB16040084B2A2 /* ManagerHomeViewController.swift in Sources */,
 				46AD886324A4DAFA0036B4AF /* BannerModel.swift in Sources */,
 				BC3E50C8232A6D6C00B56EBF /* Optional+Extension.swift in Sources */,
+				042BEAA3269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift in Sources */,
 				BCE1B3F5231BE67A001BB684 /* AccountView.swift in Sources */,
 				4654355424C2020000541E14 /* AttendanceStatusModel.swift in Sources */,
 				BC886403235C6FD60031C7F1 /* Date+Extension.swift in Sources */,
@@ -768,6 +813,7 @@
 				4648F78524BB1D410084B2A2 /* ManagerHomeDataSource.swift in Sources */,
 				BC3E50BE232A5F8000B56EBF /* StepTwoView.swift in Sources */,
 				BC886401235B5BA00031C7F1 /* UIVIewController+Extension.swift in Sources */,
+				042BEAEE26AD81170091CCF9 /* DDDColors.swift in Sources */,
 				BCE1B3CF231BB75E001BB684 /* BaseViewController.swift in Sources */,
 				BC3E50B8232A5F6100B56EBF /* StepOneView.swift in Sources */,
 				BC1014982333DD4E0096E962 /* WelcomeCell.swift in Sources */,
@@ -781,12 +827,14 @@
 				E571F77223241C1E00816C04 /* InteractiveTransitionableViewController.swift in Sources */,
 				BC10148F232E32DB0096E962 /* LoginPopupViewController.swift in Sources */,
 				BC7E4AB6235F5F7F00A314DA /* ScannerViewController.swift in Sources */,
+				046DB2DA269C9BAF00AC4538 /* MyPageViewController.swift in Sources */,
 				BC8863F5234E36C50031C7F1 /* LoginDataSource.swift in Sources */,
 				BC8863FD234E37780031C7F1 /* PosterModel.swift in Sources */,
 				BC8863FF23561B590031C7F1 /* LoginPopupViewModel.swift in Sources */,
 				BCE1B3D4231BB7BC001BB684 /* HomeViewController.swift in Sources */,
 				BCE1B3FB231BE6E9001BB684 /* QRCodeController.swift in Sources */,
 				E9DEBC0625E7C08D00EDC182 /* AppleLoginHelper.swift in Sources */,
+				042BEAA6269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift in Sources */,
 				4648F77F24BB19CF0084B2A2 /* HomeMenuCell.swift in Sources */,
 				2057031F232E2B0200103A3E /* SignUpButton.swift in Sources */,
 			);
@@ -857,7 +905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -912,7 +960,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1012,6 +1060,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
 		E9DEB98225E5E29200EDC182 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa";
@@ -1071,6 +1127,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		046DB2FA269C9CC900AC4538 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		E9DEB98325E5E29200EDC182 /* ReactiveCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E9DEB98225E5E29200EDC182 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
