@@ -115,8 +115,6 @@ private extension LoginPopupView {
     func requestAppleLogin(credential: String, name: String) {
         
     }
-    
-    func requestSignUp
 }
 
 extension LoginPopupView: UITextFieldDelegate {
