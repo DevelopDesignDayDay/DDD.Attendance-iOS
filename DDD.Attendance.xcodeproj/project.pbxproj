@@ -10,12 +10,11 @@
 		042BEAA3269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA2269DEE6C0091CCF9 /* MyPageLinkTitleHeader.swift */; };
 		042BEAA6269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */; };
 		042BEAEE26AD81170091CCF9 /* DDDColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BEAED26AD81170091CCF9 /* DDDColors.swift */; };
-		042BEB1826AD88ED0091CCF9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1726AD88ED0091CCF9 /* RxRelay */; };
-		042BEB1A26AD88ED0091CCF9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1926AD88ED0091CCF9 /* RxSwift */; };
-		042BEB1C26AD88ED0091CCF9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 042BEB1B26AD88ED0091CCF9 /* RxCocoa */; };
 		046DB2DA269C9BAF00AC4538 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */; };
 		046DB2DF269C9BEC00AC4538 /* MyPageInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */; };
 		046DB2FB269C9CC900AC4538 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 046DB2FA269C9CC900AC4538 /* Then */; };
+		0482468E26BC4B5600A4B954 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482468D26BC4B5600A4B954 /* AuthService.swift */; };
+		0482469426BC4CE700A4B954 /* SignUpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482469326BC4CE700A4B954 /* SignUpInfo.swift */; };
 		204FC78F236084D100AE693A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204FC78E236084D100AE693A /* UserModel.swift */; };
 		2057031F232E2B0200103A3E /* SignUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2057031E232E2B0200103A3E /* SignUpButton.swift */; };
 		20570323232E439900103A3E /* PositionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20570322232E439900103A3E /* PositionCardView.swift */; };
@@ -121,6 +120,8 @@
 		042BEAED26AD81170091CCF9 /* DDDColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDDColors.swift; sourceTree = "<group>"; };
 		046DB2D9269C9BAF00AC4538 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		046DB2DE269C9BEC00AC4538 /* MyPageInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageInfoHeader.swift; sourceTree = "<group>"; };
+		0482468D26BC4B5600A4B954 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0482469326BC4CE700A4B954 /* SignUpInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo.swift; sourceTree = "<group>"; };
 		168DF1228F6E1BC993EB16A5 /* Pods-DDD.Attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDD.Attendance.release.xcconfig"; path = "Target Support Files/Pods-DDD.Attendance/Pods-DDD.Attendance.release.xcconfig"; sourceTree = "<group>"; };
 		204FC78E236084D100AE693A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2057031E232E2B0200103A3E /* SignUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpButton.swift; sourceTree = "<group>"; };
@@ -224,18 +225,15 @@
 			files = (
 				E9DEB98825E5E3AE00EDC182 /* Alamofire in Frameworks */,
 				E9DEBA0A25E6643F00EDC182 /* Lottie in Frameworks */,
-				042BEB1826AD88ED0091CCF9 /* RxRelay in Frameworks */,
 				BC10147A232E25E80096E962 /* libsqlite3.tbd in Frameworks */,
 				E9DEB98425E5E29200EDC182 /* ReactiveCocoa in Frameworks */,
 				E9DEB98C25E5E7E000EDC182 /* SnapKit in Frameworks */,
-				042BEB1C26AD88ED0091CCF9 /* RxCocoa in Frameworks */,
 				046DB2FB269C9CC900AC4538 /* Then in Frameworks */,
 				E9DEBA1225E664AA00EDC182 /* TextFieldEffects in Frameworks */,
 				BC101478232E25DF0096E962 /* libc++.tbd in Frameworks */,
 				E9DEBA0E25E6647900EDC182 /* CodableFirebase in Frameworks */,
 				E9DEBA2D25E6714E00EDC182 /* NVActivityIndicatorView in Frameworks */,
 				E9DEBA2F25E6714E00EDC182 /* NVActivityIndicatorViewExtended in Frameworks */,
-				042BEB1A26AD88ED0091CCF9 /* RxSwift in Frameworks */,
 				4626117224ACCBC0006D8EC8 /* PushKit.framework in Frameworks */,
 				F0B07994B95F822BDC801493 /* Pods_DDD_Attendance.framework in Frameworks */,
 			);
@@ -269,6 +267,38 @@
 				042BEAA5269DEF6C0091CCF9 /* MyPageLinkInfoCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0482468B26BC4B1600A4B954 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0482468C26BC4B4900A4B954 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0482468C26BC4B4900A4B954 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0482468D26BC4B5600A4B954 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0482469126BC4CC600A4B954 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0482469226BC4CCA00A4B954 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0482469226BC4CCA00A4B954 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0482469326BC4CE700A4B954 /* SignUpInfo.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		204FC78D236084BB00AE693A /* Model */ = {
@@ -444,6 +474,8 @@
 		BCE1B3B9231BB68D001BB684 /* DDD.Attendance */ = {
 			isa = PBXGroup;
 			children = (
+				0482469126BC4CC600A4B954 /* Domain */,
+				0482468B26BC4B1600A4B954 /* Network */,
 				046DB2D7269C9B8B00AC4538 /* MyPage */,
 				4678E3A124B9B546005DCD5A /* Onboarding1.json */,
 				4678E3A224B9B546005DCD5A /* Onboarding2.json */,
@@ -626,9 +658,6 @@
 				E9DEBA2C25E6714E00EDC182 /* NVActivityIndicatorView */,
 				E9DEBA2E25E6714E00EDC182 /* NVActivityIndicatorViewExtended */,
 				046DB2FA269C9CC900AC4538 /* Then */,
-				042BEB1726AD88ED0091CCF9 /* RxRelay */,
-				042BEB1926AD88ED0091CCF9 /* RxSwift */,
-				042BEB1B26AD88ED0091CCF9 /* RxCocoa */,
 			);
 			productName = DDD.Attendance;
 			productReference = BCE1B3B7231BB68D001BB684 /* DDD.Attendance.app */;
@@ -672,7 +701,6 @@
 				E9DEBA1025E664AA00EDC182 /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				E9DEBA2B25E6714D00EDC182 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */,
-				042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = BCE1B3B8231BB68D001BB684 /* Products */;
 			projectDirPath = "";
@@ -803,6 +831,7 @@
 				BCDE47502379A990009CEAC2 /* Curriculum.swift in Sources */,
 				BCE1B4102320034F001BB684 /* AttendanceListCell.swift in Sources */,
 				BCE1B3FE231BF127001BB684 /* AccountModel.swift in Sources */,
+				0482468E26BC4B5600A4B954 /* AuthService.swift in Sources */,
 				BCE1B3BB231BB68D001BB684 /* AppDelegate.swift in Sources */,
 				E571F7652324024D00816C04 /* Storyboard.swift in Sources */,
 				BC3E50C6232A5FC800B56EBF /* StepFourView.swift in Sources */,
@@ -841,6 +870,7 @@
 				BC8863F5234E36C50031C7F1 /* LoginDataSource.swift in Sources */,
 				BC8863FD234E37780031C7F1 /* PosterModel.swift in Sources */,
 				BC8863FF23561B590031C7F1 /* LoginPopupViewModel.swift in Sources */,
+				0482469426BC4CE700A4B954 /* SignUpInfo.swift in Sources */,
 				BCE1B3D4231BB7BC001BB684 /* HomeViewController.swift in Sources */,
 				BCE1B3FB231BE6E9001BB684 /* QRCodeController.swift in Sources */,
 				E9DEBC0625E7C08D00EDC182 /* AppleLoginHelper.swift in Sources */,
@@ -989,7 +1019,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = M96L4WMU9C;
+				DEVELOPMENT_TEAM = B4JRVGF6UQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1005,7 +1035,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = odyflame.ddd.DDDAttendance;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.DDDAttendance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1022,7 +1052,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
-				DEVELOPMENT_TEAM = M96L4WMU9C;
+				DEVELOPMENT_TEAM = B4JRVGF6UQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -1038,7 +1068,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = odyflame.ddd.DDDAttendance;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ddd.DDDAttendance--explicit-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1070,14 +1100,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.0;
-			};
-		};
 		046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then.git";
@@ -1145,21 +1167,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		042BEB1726AD88ED0091CCF9 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		042BEB1926AD88ED0091CCF9 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		042BEB1B26AD88ED0091CCF9 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 042BEB1626AD88ED0091CCF9 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
 		046DB2FA269C9CC900AC4538 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 046DB2F9269C9CC900AC4538 /* XCRemoteSwiftPackageReference "Then" */;
